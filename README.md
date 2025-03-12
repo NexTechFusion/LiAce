@@ -3,6 +3,10 @@
 !UNFINISHED!
 
 
+https://github.com/user-attachments/assets/feb2d3f7-c318-4419-86d3-e7786db60fdb
+
+
+
 ## Overview
 
 Trying to build a UX friendly open AI text editor.
