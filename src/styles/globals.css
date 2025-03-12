@@ -1,0 +1,58 @@
+/* Add this to the end of the file */
+
+/* Grammar correction styles */
+.grammar-correction .error-highlight,
+.grammar-correction .correction-highlight {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.grammar-correction .error-highlight:hover,
+.grammar-correction .correction-highlight:hover {
+  filter: brightness(0.95);
+}
+
+.grammar-correction .error-highlight:hover::after,
+.grammar-correction .correction-highlight:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  font-size: 11px;
+  white-space: nowrap;
+  z-index: 10;
+  margin-bottom: 4px;
+}
+
+.grammar-correction .error-highlight:hover::before,
+.grammar-correction .correction-highlight:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  z-index: 10;
+}
+
+.grammar-summary {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.grammar-comparison {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.dark .grammar-comparison {
+  background-color: rgba(255, 255, 255, 0.02);
+} 
